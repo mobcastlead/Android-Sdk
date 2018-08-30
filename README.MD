@@ -83,21 +83,11 @@
 - [ ] 开发者SDK集成
     [MobiExchanger SDK下载地址](https://github.com/mobcastlead/Android-Unity-Sdk)开发者可参考github提供的例子进行测试开发；也可以联系MobiExchanger技术人员进行协助。
 
-细节预览
-```
-//1、引入 MobiExchanger.framework
-//2、依赖库 UnityAds.framework
+- [ ] 技术细节
+    1、【可参考(https://github.com/Unity-Technologies/unity-ads-android/wiki/sdk_android_integration_guide)
+    **注意**：依赖库文件需要引入mobiexchanger.aar,不要使用unity-ads.aar.
+    2、[mobiexchanger.arr下载地址](https://github.com/mobcastlead/Android-Unity-Sdk/blob/master/app/libs/mobiexchanger.aar)
 
-// 头文件
-#import<MobiExchanger/MobiExchanger.h>
-
-// 初始化
-[MEXPublic initialize:gameId delegate:self testMode:self.testMode]
-[MEXPublic initialize:gameId delegate:self]
-
-// show方法
-[MEXPublic show:self placementId:self.interstitialPlacementId]
-```
 
 *测试联调*
 
